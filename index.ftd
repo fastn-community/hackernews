@@ -1,0 +1,54 @@
+-- import: hackernews/assets
+-- import: fastn/processors as pr
+-- import: hackernews/hn
+-- import: hackernews/endpoints
+-- import: hackernews/utility
+
+-- integer list ids:
+$processor$: pr.http
+url: $endpoints.top-stories
+
+-- ftd.document:
+favicon: images/hn.svg
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.row:
+width: fill-container
+shadow: $header-shadow
+padding.rem: 1
+
+-- ftd.row:
+spacing.fixed.rem: .5
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.hn.svg
+width.fixed.px: 16
+height.fixed.px: 16
+
+-- ftd.text: HackerNews
+style: semi-bold
+role: $inherited.types.copy-large
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- hn.hn-posts:
+ids: $ids
+
+-- end: ftd.column
+
+-- end: ftd.document
+
+
+-- ftd.color shadow-color:
+dark: #eee
+light: #eee
+
+-- ftd.shadow header-shadow:
+color: $shadow-color
+blur.px: 1
+spread.px: 2

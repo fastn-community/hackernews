@@ -1,0 +1,3 @@
+-- string top-stories: https://hacker-news.firebaseio.com/v0/topstories.json?limitToFirst=10&orderBy="$key"
+
+-- string item: https://hacker-news.firebaseio.com/v0/item/

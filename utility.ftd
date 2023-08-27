@@ -1,0 +1,25 @@
+-- string join(a,b):
+string a:
+string b:
+
+a + "" + b
+
+-- string join-int(a,b):
+string a:
+integer b:
+
+a + "" + b
+
+
+;; -- ftd.text: $item.url
+;; for: item in $items
+
+;; -- string list get-id-urls(a):
+;; integer list a:
+
+;; url = "https://hacker-news.firebaseio.com/v0/item/";
+;; ids = fastn_utils.getFlattenStaticValue(a);
+;; joined = ids.join(" " + url);
+;; joined_2 = url + joined;
+;; list = joined_2.split(" ");
+;; fastn.mutableList(list)

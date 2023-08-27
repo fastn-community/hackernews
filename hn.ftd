@@ -1,0 +1,18 @@
+-- record item:
+string by:
+integer descendants:
+integer id:
+integer list kids:
+integer score:
+integer time:
+string title:
+string type:
+string url:
+
+-- ftd.color primary-color: #F56565
+
+-- web-component hn-posts:
+integer list ids:
+js: hacker-news-posts.js
+
+-- end: hn-posts
